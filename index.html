@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alma Fit | Looks lindos por preço que cabe no bolso</title>
+  <meta name="description" content="Moda fitness feminina com preço baixo. Leve mais peças e pague menos: de R$ 197 por R$ 97." />
+  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+  <script>
+    // TROQUE AQUI AS CORES PELAS DA SUA LOJA
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            marca: { DEFAULT: '#7A4B2A', escuro: '#5C3519', claro: '#EFE3D8' },
+            apoio: { DEFAULT: '#3E2716', escuro: '#2A190D' },
+            urgencia: '#B5654A'
+          },
+          fontFamily: { sans: ['Poppins', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet" />
+  <style>
+    html { scroll-behavior: smooth; }
+    .pulse-cta { animation: pulse 2s infinite; }
+    @keyframes pulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.04); } }
+    details summary::-webkit-details-marker { display: none; }
+    details[open] .seta { transform: rotate(45deg); }
+  </style>
+</head>
+<body class="font-sans text-gray-800 bg-white">
+
+  <!-- BARRA DE URGÊNCIA -->
+  <div class="bg-urgencia text-white text-center text-xs sm:text-sm font-semibold py-2 px-4">
+    🔥 Oferta por tempo limitado: leve mais peças e pague só R$ 97!
+  </div>
+
+  <!-- 1. HEADER -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm">
+    <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
+      <!-- TROQUE PELO SEU LOGO: <img src="logo.png" alt="Nome da Loja" class="h-10"> -->
+      <a href="#" class="leading-none text-marca text-center" style="font-family:Josefin Sans"><span class="block text-xl tracking-[0.4em] font-light">ALMA</span><span class="block text-[10px] tracking-[0.5em]">FIT</span></a>
+      <a href="#checkout" class="bg-marca hover:bg-marca-escuro text-white text-sm font-semibold px-4 py-2 rounded-full transition">
+        Quero meu kit
+      </a>
+    </div>
+  </header>
+
+  <!-- 2. HERO -->
+  <section class="bg-gradient-to-br from-marca-claro via-white to-[#F6EEE7]">
+    <div class="max-w-6xl mx-auto px-4 py-12 md:py-20 grid md:grid-cols-2 gap-10 items-center">
+      <div class="text-center md:text-left">
+        <span class="inline-block bg-apoio text-white text-xs font-semibold px-3 py-1 rounded-full mb-4">NOVA COLEÇÃO FITNESS</span>
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight mb-4">
+          Treinar fica <span class="text-marca">muito mais gostoso</span> quando você se sente linda
+        </h1>
+        <p class="text-lg text-gray-600 mb-6">
+          Leggings, tops e conjuntos confortáveis que valorizam seu corpo do jeito que ele é — por um preço que não pesa no bolso.
+        </p>
+        <a href="#checkout" class="pulse-cta inline-block w-full sm:w-auto bg-marca hover:bg-marca-escuro text-white text-lg font-bold px-8 py-4 rounded-full shadow-lg transition">
+          Quero meus looks com desconto ✨
+        </a>
+        <div class="flex items-center justify-center md:justify-start gap-3 mt-6 text-sm">
+          <div class="flex -space-x-2">
+            <div class="w-8 h-8 rounded-full bg-[#E3CDBB] border-2 border-white"></div>
+            <div class="w-8 h-8 rounded-full bg-[#D4B59C] border-2 border-white"></div>
+            <div class="w-8 h-8 rounded-full bg-[#C49A7A] border-2 border-white"></div>
+          </div>
+          <p><span class="text-yellow-500">★★★★★</span> <strong>+2.000 clientes</strong> felizes</p>
+        </div>
+      </div>
+      <div>
+        <!-- TROQUE PELA FOTO REAL: <img src="hero.jpg" class="rounded-3xl shadow-xl w-full"> -->
+        <div class="aspect-[4/5] rounded-3xl shadow-xl bg-gradient-to-br from-marca to-apoio flex items-center justify-center text-white text-center p-6">
+          <p class="text-xl font-semibold">📸 Foto de modelo com<br>o conjunto mais vendido</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. DOR / PROBLEMA -->
+  <section class="py-14 px-4 bg-white">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-2xl md:text-4xl font-extrabold mb-8">Você se identifica com alguma dessas situações?</h2>
+      <div class="grid sm:grid-cols-2 gap-4 text-left">
+        <div class="flex gap-3 p-4 rounded-2xl bg-gray-50"><span class="text-2xl">😩</span><p>Desanima de ir treinar porque não se sente bem com a roupa.</p></div>
+        <div class="flex gap-3 p-4 rounded-2xl bg-gray-50"><span class="text-2xl">💸</span><p>Acha roupa fitness bonita, mas o preço das grandes marcas assusta.</p></div>
+        <div class="flex gap-3 p-4 rounded-2xl bg-gray-50"><span class="text-2xl">🙈</span><p>Já comprou legging que ficou transparente ou desceu no agachamento.</p></div>
+        <div class="flex gap-3 p-4 rounded-2xl bg-gray-50"><span class="text-2xl">😓</span><p>Usa sempre a mesma roupa velha e sente que falta motivação.</p></div>
+      </div>
+      <p class="mt-8 text-lg text-gray-600">Você não precisa gastar muito nem se sentir desconfortável para cuidar de você. <strong>Existe um jeito mais leve.</strong></p>
+    </div>
+  </section>
+
+  <!-- 4. SOLUÇÃO -->
+  <section class="py-14 px-4 bg-apoio text-white">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-2xl md:text-4xl font-extrabold mb-4">Conheça a moda fitness que cabe no seu corpo <span class="text-[#EFE3D8]">e no seu bolso</span></h2>
+      <p class="text-lg text-[#EFE3D8] mb-8">Selecionamos peças com tecido de qualidade, modelagem que valoriza e preço justo. Quanto mais peças você leva, mais você economiza.</p>
+      <div class="grid grid-cols-3 gap-4">
+        <div><p class="text-3xl md:text-5xl font-extrabold text-[#EFE3D8]">50%</p><p class="text-sm">de desconto</p></div>
+        <div><p class="text-3xl md:text-5xl font-extrabold text-[#EFE3D8]">P ao GG</p><p class="text-sm">todos os corpos</p></div>
+        <div><p class="text-3xl md:text-5xl font-extrabold text-[#EFE3D8]">7 dias</p><p class="text-sm">para trocar</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. BENEFÍCIOS / CARACTERÍSTICAS -->
+  <section class="py-14 px-4 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-2xl md:text-4xl font-extrabold text-center mb-10">O que você recebe ao escolher a gente</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="p-6 rounded-3xl border-2 border-marca-claro hover:border-marca transition">
+          <div class="text-4xl mb-3">🩱</div><h3 class="font-bold text-lg mb-2">Tecido que não fica transparente</h3>
+          <p class="text-gray-600">Agacha, pula e corre sem preocupação. Testado e aprovado.</p>
+        </div>
+        <div class="p-6 rounded-3xl border-2 border-marca-claro hover:border-marca transition">
+          <div class="text-4xl mb-3">✨</div><h3 class="font-bold text-lg mb-2">Modelagem que valoriza</h3>
+          <p class="text-gray-600">Cintura alta e compressão na medida certa para você se sentir segura.</p>
+        </div>
+        <div class="p-6 rounded-3xl border-2 border-marca-claro hover:border-marca transition">
+          <div class="text-4xl mb-3">🌬️</div><h3 class="font-bold text-lg mb-2">Conforto o dia todo</h3>
+          <p class="text-gray-600">Tecido respirável, do treino ao dia a dia, sem marcar nem incomodar.</p>
+        </div>
+        <div class="p-6 rounded-3xl border-2 border-marca-claro hover:border-marca transition">
+          <div class="text-4xl mb-3">🎨</div><h3 class="font-bold text-lg mb-2">Cores e estampas da moda</h3>
+          <p class="text-gray-600">Conjuntos lindos para montar looks que dão vontade de treinar.</p>
+        </div>
+        <div class="p-6 rounded-3xl border-2 border-marca-claro hover:border-marca transition">
+          <div class="text-4xl mb-3">🚚</div><h3 class="font-bold text-lg mb-2">Entrega rápida</h3>
+          <p class="text-gray-600">Enviamos com código de rastreio para você acompanhar tudo.</p>
+        </div>
+        <div class="p-6 rounded-3xl border-2 border-marca-claro hover:border-marca transition">
+          <div class="text-4xl mb-3">💰</div><h3 class="font-bold text-lg mb-2">Leve mais, pague menos</h3>
+          <p class="text-gray-600">Desconto progressivo: quanto mais peças, maior a economia.</p>
+        </div>
+      </div>
+      <div class="text-center mt-10">
+        <a href="#checkout" class="inline-block w-full sm:w-auto bg-marca hover:bg-marca-escuro text-white text-lg font-bold px-8 py-4 rounded-full shadow-lg transition">
+          Quero montar meu kit agora
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. DEPOIMENTOS -->
+  <section class="py-14 px-4 bg-marca-claro">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-2xl md:text-4xl font-extrabold text-center mb-10">Quem compra, volta 💕</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-3xl shadow">
+          <p class="text-yellow-500 mb-2">★★★★★</p>
+          <p class="text-gray-700 mb-4">"[Depoimento da cliente aqui — ex.: a legging não fica transparente e o preço foi o melhor que achei.]"</p>
+          <div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-[#E3CDBB]"></div><div><p class="font-bold">Nome da Cliente</p><p class="text-xs text-gray-500">Cidade - UF</p></div></div>
+        </div>
+        <div class="bg-white p-6 rounded-3xl shadow">
+          <p class="text-yellow-500 mb-2">★★★★★</p>
+          <p class="text-gray-700 mb-4">"[Depoimento da cliente aqui — ex.: chegou rápido e o conjunto é lindo pessoalmente.]"</p>
+          <div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-[#D4B59C]"></div><div><p class="font-bold">Nome da Cliente</p><p class="text-xs text-gray-500">Cidade - UF</p></div></div>
+        </div>
+        <div class="bg-white p-6 rounded-3xl shadow">
+          <p class="text-yellow-500 mb-2">★★★★★</p>
+          <p class="text-gray-700 mb-4">"[Depoimento da cliente aqui — ex.: agora treino animada, já comprei pela segunda vez.]"</p>
+          <div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-[#C49A7A]"></div><div><p class="font-bold">Nome da Cliente</p><p class="text-xs text-gray-500">Cidade - UF</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. OFERTA -->
+  <section id="oferta" class="py-14 px-4 bg-white">
+    <div class="max-w-lg mx-auto">
+      <div class="rounded-3xl shadow-2xl border-4 border-marca overflow-hidden">
+        <div class="bg-marca text-white text-center py-3 font-bold">🔥 OFERTA ESPECIAL – KIT COM MAIS PEÇAS</div>
+        <div class="p-6 text-center">
+          <p class="text-gray-500 line-through text-xl">De R$ 197,00</p>
+          <p class="text-sm text-gray-600">por apenas</p>
+          <p class="text-5xl font-extrabold text-marca my-2">R$ 97<span class="text-2xl">,00</span></p>
+          <p class="text-sm text-gray-600 mb-6">ou em até 12x no cartão</p>
+          <ul class="text-left space-y-3 mb-6">
+            <li>✅ Kit de peças à sua escolha</li>
+            <li>✅ Tamanhos do P ao GG</li>
+            <li>✅ Envio com rastreio</li>
+            <li>🎁 <strong>Bônus:</strong> brinde surpresa no pedido</li>
+            <li>🎁 <strong>Bônus:</strong> cupom para a próxima compra</li>
+          </ul>
+          <a id="checkout" href="#checkout" class="pulse-cta block w-full bg-urgencia hover:opacity-90 text-white text-lg font-bold py-4 rounded-full shadow-lg transition">
+            SIM! Quero aproveitar o desconto
+          </a>
+          <p class="text-xs text-gray-500 mt-3">🔒 Compra 100% segura · Pix, cartão e boleto</p>
+        </div>
+      </div>
+      <div class="mt-8 flex gap-4 items-center bg-gray-50 p-5 rounded-2xl">
+        <div class="text-5xl">🛡️</div>
+        <div>
+          <h3 class="font-bold">Garantia de 7 dias</h3>
+          <p class="text-sm text-gray-600">Não serviu ou não gostou? Você pode trocar ou devolver em até 7 dias após o recebimento, conforme o Código de Defesa do Consumidor.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. FAQ -->
+  <section class="py-14 px-4 bg-gray-50">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-2xl md:text-4xl font-extrabold text-center mb-8">Perguntas frequentes</h2>
+      <div class="space-y-3">
+        <details class="bg-white rounded-2xl p-5 shadow-sm"><summary class="flex justify-between font-semibold cursor-pointer">Como escolho meu tamanho?<span class="seta text-marca text-xl transition">+</span></summary><p class="mt-3 text-gray-600">Temos tabela de medidas em cada produto. Se ficar em dúvida, chame no WhatsApp que ajudamos você.</p></details>
+        <details class="bg-white rounded-2xl p-5 shadow-sm"><summary class="flex justify-between font-semibold cursor-pointer">Quanto tempo demora a entrega?<span class="seta text-marca text-xl transition">+</span></summary><p class="mt-3 text-gray-600">O prazo depende da sua região e é informado no checkout. Você recebe o código de rastreio por e-mail/WhatsApp.</p></details>
+        <details class="bg-white rounded-2xl p-5 shadow-sm"><summary class="flex justify-between font-semibold cursor-pointer">A legging fica transparente?<span class="seta text-marca text-xl transition">+</span></summary><p class="mt-3 text-gray-600">Não. Usamos tecido encorpado, testado em agachamento.</p></details>
+        <details class="bg-white rounded-2xl p-5 shadow-sm"><summary class="flex justify-between font-semibold cursor-pointer">Posso trocar se não servir?<span class="seta text-marca text-xl transition">+</span></summary><p class="mt-3 text-gray-600">Sim! Você tem 7 dias após o recebimento para solicitar troca ou devolução.</p></details>
+        <details class="bg-white rounded-2xl p-5 shadow-sm"><summary class="flex justify-between font-semibold cursor-pointer">Quais as formas de pagamento?<span class="seta text-marca text-xl transition">+</span></summary><p class="mt-3 text-gray-600">Pix, cartão de crédito em até 12x e boleto.</p></details>
+      </div>
+      <div class="text-center mt-10">
+        <a href="#checkout" class="inline-block w-full sm:w-auto bg-marca hover:bg-marca-escuro text-white text-lg font-bold px-8 py-4 rounded-full shadow-lg transition">
+          Garantir meu desconto agora
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. RODAPÉ -->
+  <footer class="bg-gray-900 text-gray-400 py-8 px-4 text-center text-sm">
+    <p class="text-[#EFE3D8] text-xl tracking-[0.4em] font-light mb-1" style="font-family:Josefin Sans">ALMA FIT</p><p class="text-xs tracking-[0.3em] mb-4">MODA FITNESS FEMININA</p>
+    <div class="flex flex-wrap justify-center gap-4 mb-3">
+      <a href="#" class="hover:text-white">Termos de Uso</a>
+      <a href="#" class="hover:text-white">Política de Privacidade</a>
+      <a href="#" class="hover:text-white">Trocas e Devoluções</a>
+      <a href="#" class="hover:text-white">Contato</a>
+    </div>
+    <p>CNPJ: 00.000.000/0001-00</p>
+    <p>© 2026 Alma Fit. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- BOTÃO FLUTUANTE MOBILE -->
+  <a href="#checkout" class="md:hidden fixed bottom-4 left-4 right-4 z-50 bg-marca text-white text-center font-bold py-3 rounded-full shadow-2xl">
+    Comprar com 50% OFF ✨
+  </a>
+</body>
+</html>
